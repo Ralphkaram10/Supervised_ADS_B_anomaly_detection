@@ -30,7 +30,8 @@ STRUCTURE OF THE PROJECT
 	    └── training_testing_models.py
 
     configs: Contains configuration files used for training, testing or analyzing detection.
-    datasets: Should contain datasets used to train or test a deep learning model to detect different kinds of attacks (mentioned above).. Such datasets can be downloaded by accessing the link: "https://mega.nz/folder/xTcRFIxZ#hTj6vVoR-40ZgAx_9BSHmw".
+    datasets: Should contain datasets used to train or test a deep learning model to detect different kinds of attacks (mentioned above).
+    Such datasets can be downloaded by accessing the link: "https://mega.nz/folder/xTcRFIxZ#hTj6vVoR-40ZgAx_9BSHmw".
     models: Contains your pretrained models (as well as newly trained models).
     src: Contains the source codes.
     analyze_detection.py: Module containing functions and classes used to analyze the detection of anomalies in individual flights as well the alarm mechanism.
