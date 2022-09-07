@@ -1,0 +1,16 @@
+train_directory: 'Train_Longitude_++=1.28e-3_Meta' 
+test_directory: 'Test_Longitude_++=1.28e-3_Meta' 
+lookback: 10
+epochs: 10
+batch_size: 512
+to_diff_cond: 1 
+model_class: 'TRANSFORMER_SUPERVISED'  
+pretrained: 1 
+label_for_metamessage_or_window: 0
+concatenated_df: 0
+threshold_alarm: 300 
+loss_function : "mse" 
+optimizer : "adam" 
+future_time_as_input: 0
+scaling: 0 
+

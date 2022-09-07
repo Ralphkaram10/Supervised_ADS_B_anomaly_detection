@@ -1,0 +1,15 @@
+batch_size: 512
+concatenated_df: 0
+epochs: 10
+future_time_as_input: 0
+label_for_metamessage_or_window: 0
+lookback: 100
+loss_function: mse
+model_class: TRANSFORMER_SUPERVISED
+optimizer: adam
+pretrained: 1
+scaling: 0
+test_directory: Test_Track_++=0.9_Meta
+threshold_alarm: 700
+to_diff_cond: 1
+train_directory: Train_Track_++=0.9_Meta
