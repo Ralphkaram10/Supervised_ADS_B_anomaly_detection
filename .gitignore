@@ -1,1 +1,5 @@
 *~
+**/__pycache__
+datasets/*
+!datasets/dataset_example_containing_one_flight_only
+.vscode

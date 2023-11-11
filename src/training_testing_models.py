@@ -403,7 +403,7 @@ def get_model(total_train_loader,
     print(f"\nModel used:\n\n{model}")
     if pretrained == 0:
         train_model(model, total_train_loader, device=device, PATH=PATH)
-    model_untrained.load_state_dict(torch.load(PATH))
+    model_untrained.load_state_dict(torch.load(PATH,map_location=device))
     if torch.cuda.is_available():
         model_untrained.to(device)
     return model_untrained

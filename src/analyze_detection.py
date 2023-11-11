@@ -111,11 +111,11 @@ def get_df_real_df_pred(file, scaler, test_loader_dict, test_labels_dict,
         scaler=scaler,
         columns_to_scale=['7_8', '4', '12', '13', '14', '15', '16'],
         enable_decorator=False)
-    df_real = df.iloc[-size:]
+    df_real = df.iloc[-size:].copy()
     df_pred = df.iloc[
-        -size:] 
-    df_real.loc[:,'24'] = labels
-    df_pred.loc[:,'24'] = labels_pred
+        -size:].copy() 
+    df_real.loc[:,'24'] = labels.numpy()
+    df_pred.loc[:,'24'] = labels_pred.numpy()
     df_real = df_real.reset_index(drop=True)
     df_pred = df_pred.reset_index(drop=True)
     return df_real, df_pred
