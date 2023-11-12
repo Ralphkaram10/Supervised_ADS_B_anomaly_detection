@@ -10,11 +10,13 @@ and longitude.
 
 ## NEEDED PACKAGES
 
-pandas,<br>
-tqdm,<br>
-sklearn,<br>
-torch,<br>
-pyaml.<br>
+pandas==2.1.3<br>
+tqdm==4.66.1<br>
+scikit-learn==1.3.2<br>
+torch==2.1.0<br>
+pyaml==23.9.7<br>
+traffic==2.9.0<br>
+
 These packages could be installed using pip or conda.
 
 ## STRUCTURE OF THE PROJECT
